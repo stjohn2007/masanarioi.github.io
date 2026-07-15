@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://masanarioi.github.io/sitemap.xml
+Sitemap: https://stjohn2007.github.io/masanarioi.github.io/sitemap.xml
