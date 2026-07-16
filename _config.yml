@@ -9,11 +9,11 @@ last_name: Oi
 contact_note: >
   Please contact me via the links below.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal website of Masanari Oi, a PhD student in computer science at Institute of Science Tokyo.
+  Personal website of Masanari Oi (大井 聖也 / 大井聖也), a PhD student in computer science at Institute of Science Tokyo.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: natural language processing, large language models, multimodal ai, speech synthesis, evaluation
+keywords: Masanari Oi, 大井 聖也, 大井聖也, natural language processing, large language models, multimodal ai, speech synthesis, evaluation
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🧠 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
