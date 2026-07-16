@@ -383,6 +383,8 @@ filtered_bibtex_keywords:
     hal,
     html,
     inspirehep_id,
+    message,
+    message_ja,
     model,
     note_ja,
     pdf,
