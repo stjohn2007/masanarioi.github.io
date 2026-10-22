@@ -54,3 +54,5 @@ Docker note: v1 uses `/srv/jekyll/bin/entry_point.sh` and serves from container-
 - Do not add starter-local npm build scripts for theme/runtime assets.
 - Keep docs aligned with pluginized v1 ownership.
 - If you create or keep local overrides of plugin-owned files, run `bundle exec al-folio upgrade overrides audit` and commit `.al-folio-overrides.yml` after review.
+- This personal site intentionally overrides the header, about layout, and bibliography layout. Preserve these files and their Japanese navigation, display name, and publication features; do not delete them to satisfy a starter check.
+- Before proposing a deployment, run `npm ci` and `npm run verify`. This checks formatting, registered overrides, upgrade compatibility, all six integration suites, and production CSS. Report any checks that could not run.

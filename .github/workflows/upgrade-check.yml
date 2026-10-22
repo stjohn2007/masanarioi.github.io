@@ -8,6 +8,9 @@ on:
       - v1.0-dev
     paths:
       - "_config.yml"
+      - "_includes/**"
+      - "_layouts/**"
+      - ".al-folio-overrides.yml"
       - "_data/**"
       - "_pages/**"
       - "_posts/**"
@@ -24,6 +27,9 @@ on:
       - v1.0-dev
     paths:
       - "_config.yml"
+      - "_includes/**"
+      - "_layouts/**"
+      - ".al-folio-overrides.yml"
       - "_data/**"
       - "_pages/**"
       - "_posts/**"

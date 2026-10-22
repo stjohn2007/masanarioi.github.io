@@ -84,6 +84,12 @@ jobs:
           cache: "npm"
       - name: Install JS deps 📦
         run: npm ci
+      - name: Check formatting and site overrides 🧪
+        run: |
+          npm run lint:prettier
+          npm run lint:style-contract
+          bundle exec al-folio upgrade audit
+          bundle exec al-folio upgrade overrides audit
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:

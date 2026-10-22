@@ -1,5 +1,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
+const crypto = require("node:crypto");
+const YAML = require("yaml");
 
 const root = process.cwd();
 
@@ -61,7 +63,60 @@ if (/gem 'al_math',\s*:git =>/.test(gemfile)) {
   failures.push("`Gemfile` must not use git-branch pin for `al_math`; use released gem version.");
 }
 
-for (const forbiddenPath of ["_includes", "_layouts", "_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
+// Site-specific templates are supported by docs/BOUNDARIES.md. Require an
+// acknowledged, unchanged override rather than rejecting the entire directory.
+let overrides = {};
+if (exists(".al-folio-overrides.yml")) {
+  try {
+    const metadata = YAML.parse(read(".al-folio-overrides.yml"));
+    if (metadata?.version !== 1 || !metadata.overrides || typeof metadata.overrides !== "object") {
+      throw new Error("Expected version: 1 and an overrides mapping");
+    }
+    overrides = metadata.overrides;
+  } catch (error) {
+    failures.push(`Invalid override metadata: ${error.message}`);
+  }
+}
+
+function checkOverrides(directory) {
+  if (!exists(directory)) return;
+  for (const entry of fs.readdirSync(path.join(root, directory), { withFileTypes: true })) {
+    const relPath = `${directory}/${entry.name}`;
+    if (entry.isDirectory()) {
+      checkOverrides(relPath);
+      continue;
+    }
+    const override = overrides[relPath];
+    if (
+      !entry.isFile() ||
+      !override?.owner ||
+      !override.gem_version ||
+      override.upstream_path !== relPath ||
+      !/^[a-f0-9]{64}$/.test(override.upstream_sha256 || "") ||
+      !override.acknowledged_at
+    ) {
+      failures.push(`Local template \`${relPath}\` must be reviewed and registered in .al-folio-overrides.yml.`);
+      continue;
+    }
+    const digest = crypto
+      .createHash("sha256")
+      .update(fs.readFileSync(path.join(root, relPath)))
+      .digest("hex");
+    if (digest !== override.local_sha256) {
+      failures.push(`Local template \`${relPath}\` changed since review; run the override audit and acknowledge the reviewed changes.`);
+    }
+  }
+}
+
+checkOverrides("_includes");
+checkOverrides("_layouts");
+for (const relPath of Object.keys(overrides)) {
+  if (/^_(includes|layouts)\//.test(relPath) && !exists(relPath)) {
+    failures.push(`Registered site template \`${relPath}\` is missing; restore it or explicitly review its removal.`);
+  }
+}
+
+for (const forbiddenPath of ["_sass", "_scripts", "assets/tailwind", "tailwind.config.js", "assets/webfonts"]) {
   if (exists(forbiddenPath)) {
     failures.push(`Starter must not own core component path \`${forbiddenPath}\`; move ownership to the corresponding gem.`);
   }

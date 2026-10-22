@@ -5,6 +5,9 @@ on:
     branches: [main, master, v1.0-dev]
     paths:
       - "_config.yml"
+      - "_includes/**"
+      - "_layouts/**"
+      - ".al-folio-overrides.yml"
       - "_data/**"
       - "_bibliography/**"
       - "_pages/**"
@@ -21,6 +24,9 @@ on:
     branches: [v1.0-dev]
     paths:
       - "_config.yml"
+      - "_includes/**"
+      - "_layouts/**"
+      - ".al-folio-overrides.yml"
       - "_data/**"
       - "_bibliography/**"
       - "_pages/**"

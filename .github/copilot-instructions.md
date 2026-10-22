@@ -87,3 +87,5 @@ Keep these workflows aligned when changing starter behavior:
 - Route runtime/layout/feature fixes to owning plugin repos.
 - Keep all contributor guidance consistent with v1 ownership boundaries.
 - When a site keeps local overrides of plugin-owned files, run `bundle exec al-folio upgrade overrides audit` and update `.al-folio-overrides.yml` after reviewing diffs.
+- This personal site intentionally keeps registered header, about, and bibliography overrides. Preserve its Japanese navigation, Japanese display name, and publication buttons/messages. Never delete these customizations just to pass a starter check.
+- Before deployment, run `npm ci` and `npm run verify`; report failures or unavailable checks explicitly.

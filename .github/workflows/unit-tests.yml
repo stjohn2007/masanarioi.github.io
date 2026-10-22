@@ -10,6 +10,9 @@ on:
       - "Gemfile"
       - "Gemfile.lock"
       - "_config.yml"
+      - "_includes/**"
+      - "_layouts/**"
+      - ".al-folio-overrides.yml"
       - "_data/**"
       - "_pages/**"
       - "_posts/**"
@@ -28,6 +31,9 @@ on:
       - "Gemfile"
       - "Gemfile.lock"
       - "_config.yml"
+      - "_includes/**"
+      - "_layouts/**"
+      - ".al-folio-overrides.yml"
       - "_data/**"
       - "_pages/**"
       - "_posts/**"
@@ -67,7 +73,9 @@ jobs:
         run: npm ci
 
       - name: Run style contract lint 🧷
-        run: npm run lint:style-contract
+        run: |
+          npm run lint:style-contract
+          npm run test:style-contract
 
       - name: Install build prerequisites 🔧
         run: |
