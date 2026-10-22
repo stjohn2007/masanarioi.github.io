@@ -5,15 +5,15 @@ display_name: 大井 聖也 (Masanari Oi)
 permalink: /ja/
 nav: false
 nav_order: 1
-subtitle: <em>東京科学大学 博士課程学生</em>
+subtitle: <em>東京科学大学 博士課程1年</em>
 
 profile:
   align: right
   image: profile.png
   image_circular: false
   more_info: >
-    <p>岡崎研究室</p>
     <p>東京科学大学</p>
+    <p>岡崎研究室</p>
 
 selected_papers: false
 social: true
@@ -43,7 +43,7 @@ latest_posts:
 
 </style>
 
-[東京科学大学](https://www.isct.ac.jp/ja) 情報理工学院 情報工学系 博士課程1年の大井聖也です。[岡崎研究室](https://www.nlp.c.titech.ac.jp/index.ja.html) に所属しています。研究分野は自然言語処理とコンピュータビジョンです。最近は、Embodied AI、特にVision-Language Modelにおける空間推論や、ロボティクス分野におけるVision-Language Navigationに関心があります。また、[Swallow-LLM](https://swallow-llm.github.io/index.ja.html) のメンバーとして、日本語に強い大規模言語モデルの開発にも取り組んでいます。
+[東京科学大学](https://www.isct.ac.jp/ja) 情報理工学院 [岡崎研究室](https://www.nlp.c.titech.ac.jp/index.ja.html) 博士課程1年の大井聖也です。研究分野は自然言語処理とコンピュータビジョンです。最近は、Embodied AI、特にVision-Language Modelにおける空間推論や、ロボティクス分野におけるVision-Language Navigationに関心があります。また、[Swallow-LLM](https://swallow-llm.github.io/index.ja.html) のメンバーとして、日本語に強い大規模言語モデルの開発にも取り組んでいます。
 
 [CoeFont](https://coefont.cloud/) ではリサーチエンジニアとして音声合成システムの研究開発を行っています。また、[3keigo](https://3keigo.com/) では、くだけた日本語を敬語に変換するスタイル変換システムの開発に取り組んでいます。
 
@@ -73,7 +73,7 @@ latest_posts:
 
 <h2>主な発表</h2>
 
-<p class="text-muted"><em>一部の文献では、私の名前のローマ字表記が Masanari Ohi となっています。現在は Masanari Oi を使用していますが、どちらも同一人物を指します。</em></p>
+<p class="text-muted"><em>一部の文献では、私の名前のローマ字表記が Masanari Ohi となっています。現在は Masanari Oi を使用しています。</em></p>
 
 <div class="publications">
 
@@ -111,8 +111,7 @@ latest_posts:
   </li>
   <li>
     <strong>修士（工学） 情報工学系</strong>, 東京科学大学
-    <span class="text-muted">(2024年4月 - 2026年3月)</span><br>
-    <span class="text-muted">旧 東京工業大学。</span>
+    <span class="text-muted">(2024年4月 - 2026年3月)</span>
   </li>
   <li>
     <strong>学士（工学） 情報工学系</strong>, 東京工業大学
@@ -141,7 +140,7 @@ latest_posts:
   </li>
   <li>
     <strong><a href="https://www.anlp.jp/nlp2025/award.html#:~:text=%E4%B8%AD1%E4%BB%B6%EF%BC%89-,Swallow%20LLM,-%E8%97%A4%E4%BA%95%20%E4%B8%80%E5%96%9C">言語資源賞</a></strong>, 言語処理学会第31回年次大会
-    <span class="text-muted">(Top 1 / 42 = 2.4%)</span>
+    <span class="text-muted">(2025年3月; Top 1 / 42 = 2.4%)</span>
   </li>
   <li>
     <strong><a href="https://sites.google.com/sig-nl.ipsj.or.jp/sig-nl/%E6%8E%88%E8%B3%9E/outstanding#h.c9gauoc1cv4z:~:text=%E7%A0%94%E7%A9%B6%E7%99%BA%E8%A1%A8%E4%BC%9A%EF%BC%89-,LLM%E3%81%AB%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%82%92%E5%AD%A6%E7%BF%92%E3%81%95%E3%81%9B%E3%82%8B%E6%84%8F%E7%BE%A9,-%E9%BD%8B%E8%97%A4%20%E5%B9%B8%E5%8F%B2%E9%83%8E">優秀研究賞</a></strong>, 第261回自然言語処理研究発表会

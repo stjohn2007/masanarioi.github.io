@@ -42,7 +42,7 @@ latest_posts:
 
 I am a first-year PhD student in Computer Science at the [Institute of Science Tokyo](https://www.isct.ac.jp/en), and a member of the [Okazaki Laboratory](https://www.nlp.c.titech.ac.jp/index.en.html), where I work with [Prof. Naoaki Okazaki](https://www.chokkan.org/). My research interests span natural language processing and computer vision. Recently, I have been particularly interested in embodied AI, especially spatial reasoning in vision-language models and vision-language navigation for robotics. I am also a member of [Swallow-LLM](https://swallow-llm.github.io/index.en.html), where we develop Japanese large language models.
 
-I also work as a Research Engineer at [CoeFont](https://coefont.cloud/), where I develop text-to-speech systems, and at [3keigo](https://3keigo.com/), where I develop Japanese style-transfer systems for converting casual Japanese into keigo (敬語), a polite style of Japanese.
+I also work as a Research Engineer at [CoeFont](https://coefont.cloud/), where I develop text-to-speech systems, and as an AI Engineer at [3keigo](https://3keigo.com/), where I develop Japanese style-transfer systems for converting casual Japanese into keigo (敬語), a polite style of Japanese.
 
 <div class="about-main-sections">
 
@@ -64,7 +64,7 @@ I also work as a Research Engineer at [CoeFont](https://coefont.cloud/), where I
 
 <h2>Selected Publications</h2>
 
-<p class="text-muted"><em>Some of my earlier publications appear under the name Masanari Ohi, which was a previous romanization of my name. Both refer to myself, Masanari Oi.</em></p>
+<p class="text-muted"><em>Some of my earlier publications appear under the name Masanari Ohi, which was a previous romanization of my name. I now use the romanization Masanari Oi.</em></p>
 
 <div class="publications">
 
@@ -72,7 +72,7 @@ I also work as a Research Engineer at [CoeFont](https://coefont.cloud/), where I
 
 </div>
 
-<h2>Experiences</h2>
+<h2>Experience</h2>
 
 <ul>
   <li>
@@ -97,7 +97,7 @@ I also work as a Research Engineer at [CoeFont](https://coefont.cloud/), where I
 
 <ul>
   <li>
-    <strong>Doctor of Engineering in Computer Science</strong>, Institute of Science Tokyo
+    <strong>Doctoral Program in Computer Science</strong>, Institute of Science Tokyo
     <span class="text-muted">(Apr 2026 - Present)</span>
   </li>
   <li>
@@ -132,7 +132,7 @@ I also work as a Research Engineer at [CoeFont](https://coefont.cloud/), where I
   </li>
   <li>
     <strong><a href="https://www.anlp.jp/nlp2025/award.html#:~:text=%E4%B8%AD1%E4%BB%B6%EF%BC%89-,Swallow%20LLM,-%E8%97%A4%E4%BA%95%20%E4%B8%80%E5%96%9C">Language Resource Award</a></strong>, The 31st Annual Meeting of the Association for Natural Language Processing
-    <span class="text-muted">(Top 1 / 42 = 2.4%)</span>
+    <span class="text-muted">(Mar 2025; Top 1 / 42 = 2.4%)</span>
   </li>
   <li>
     <strong><a href="https://sites.google.com/sig-nl.ipsj.or.jp/sig-nl/%E6%8E%88%E8%B3%9E/outstanding#h.c9gauoc1cv4z:~:text=%E7%A0%94%E7%A9%B6%E7%99%BA%E8%A1%A8%E4%BC%9A%EF%BC%89-,LLM%E3%81%AB%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%82%92%E5%AD%A6%E7%BF%92%E3%81%95%E3%81%9B%E3%82%8B%E6%84%8F%E7%BE%A9,-%E9%BD%8B%E8%97%A4%20%E5%B9%B8%E5%8F%B2%E9%83%8E">Best Research Award</a></strong>, The 261st NL Research Presentation
